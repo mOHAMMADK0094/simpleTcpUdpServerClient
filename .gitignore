@@ -1,5 +1,5 @@
 .vscode/
-
+.gdb_history
 # Prerequisites
 *.d
 
