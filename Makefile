@@ -1,14 +1,12 @@
 CXX = g++
-CXXFLAGS = -Wall -std=c++11
+CXXFLAGS = -Werror -std=c++11
 
 SRCS = main.cc server.cc client.cc
-OBJS = $(SRCS:.cc=.o)
 
 TARGET = simpleTcpUdpServerClient
 
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET) && rm *.o
-
+$(TARGET):
+	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET) 
 .PHONY: clean
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(TARGET)
