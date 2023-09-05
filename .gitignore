@@ -1,5 +1,7 @@
 .vscode/
 .gdb_history
+simpleTcpUdpServerClient
+
 # Prerequisites
 *.d
 
